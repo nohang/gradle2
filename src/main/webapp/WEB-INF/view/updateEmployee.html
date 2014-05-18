@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="_common/layout">
+<head>
+    <title>Spring 3 hibernate integration example on www.howtodoinjava.com</title>
+</head>
+<body>
+<h2>Update Employee</h2>
+<div class="employee">
+    <form action="/update/save" method="post">
+        <table>
+            <tr>
+                <td><input id="id" name="id" type="text" hidden="hidden" th:value="${id}" /></td>
+            </tr>
+            <tr>
+                <td>FIRSTNAME<input id="firstname" name="firstname" type="text" th:value="${firstname}" /></td>
+            </tr>
+            <tr>
+                <td>LASTNAME<input id="lastname" name="lastname" type="text" th:value="${lastname}" /></td>
+            </tr>
+            <tr>
+                <td>EMAIL<input id="email" name="email" type="text" th:value="${email}" /></td>
+            </tr>
+            <tr>
+                <td>TELEPHONE<input id="telephone" name="telephone" type="text" th:value="${telephone}" /></td>
+            </tr>
+            <tr>
+                <td>TEAM<input id="team" name="team" type="text" th:value="${team}" /></td>
+            </tr>
+            <tr>
+                <td>FLOOR<input id="floor" name="floor" type="text" th:value="${floor}" /></td>
+            </tr>
+            <tr>
+                <td>SEX<input id="sex" name="sex" type="text" th:value="${sex}" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">update</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# gradle
+build
+.gradle
+
+# idea
+out
+classes
+.idea
+*.iml
+*.ipr
+*.iws
+*.pyc
+
+# etc
+rebel.xml
+pcs-login
+.svn/
+*.swp
+node_modules/
+sauce_connect.log
+
+# private env
+#atmos-api/src/main/resources/
+#atmos-core/src/main/resources/core-env.properties
+#atmos-front/src/main/resources/front-env.properties
+#atmosds-mongofarm/src/main/resources/api-env.properties

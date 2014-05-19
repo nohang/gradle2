@@ -27,7 +27,7 @@ import java.util.List;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.band.employee.controller", includeFilters = @ComponentScan.Filter(Controller.class))
+@ComponentScan(basePackages = "com.skp.band.controller", includeFilters = @ComponentScan.Filter(Controller.class))
 public class WebAppConfig extends WebMvcConfigurerAdapter {
 
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
